@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+#root {
+  height: 100%;
+}
+
+.ant-layout-sider-light {
+  border-right: 1px solid #f2f2f2;
+}
+
+.ant-menu-vertical {
+  border-inline-end: none;
+}
+
+.ant-form-item-label {
+  height: 32px !important;
+}
+
+.ant-form-item-label > label {
+  height: 32px !important;
+  padding-bottom: 0;
+}
+
+.ant-form-item-explain-error {
+  font-size: 12px;
+  padding-left: 12px;
+}
+
+.ant-modal.preview-report .ant-modal-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ant-modal.preview-report .ant-modal-body {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  overflow-y: auto;
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.ant-modal.preview-report .ant-modal-body::-webkit-scrollbar {
+  display: none;
+}
+
+.ant-modal.preview-report .ant-modal-header,
+.ant-modal.preview-report .ant-modal-footer {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
